@@ -13,6 +13,7 @@
 				<artifactId>drools-bom</artifactId>
 				<type>pom</type>
 				<version>7.2.0.Final</version>
+				<!-- <version>6.5.0.Final-redhat-9</version>-->
 				<scope>import</scope>
 			</dependency>
 		</dependencies>

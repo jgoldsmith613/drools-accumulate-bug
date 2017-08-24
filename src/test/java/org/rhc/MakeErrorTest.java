@@ -14,7 +14,7 @@ public class MakeErrorTest {
 		KieServices ks = KieServices.Factory.get();
 		KieContainer kContainer = ks.getKieClasspathContainer();
 
-		StatelessKieSession kSession = kContainer.newStatelessKieSession("with_error");
+		StatelessKieSession kSession = kContainer.newStatelessKieSession("with_error_session");
 		kSession.execute(new SampleOne());
 	}
 	
@@ -24,7 +24,7 @@ public class MakeErrorTest {
 		KieServices ks = KieServices.Factory.get();
 		KieContainer kContainer = ks.getKieClasspathContainer();
 
-		StatelessKieSession kSession = kContainer.newStatelessKieSession("with_expected_error");
+		StatelessKieSession kSession = kContainer.newStatelessKieSession("with_expected_error_session");
 		kSession.execute(new SampleOne());
 	}
 	
@@ -33,7 +33,7 @@ public class MakeErrorTest {
 		KieServices ks = KieServices.Factory.get();
 		KieContainer kContainer = ks.getKieClasspathContainer();
 
-		StatelessKieSession kSession = kContainer.newStatelessKieSession("with_expected_error_no_binding");
+		StatelessKieSession kSession = kContainer.newStatelessKieSession("with_expected_error_no_binding_session");
 		kSession.execute(new SampleOne());
 	}
 
