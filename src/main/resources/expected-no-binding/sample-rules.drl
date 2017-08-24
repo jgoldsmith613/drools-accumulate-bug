@@ -1,0 +1,15 @@
+import org.rhc.model.SampleOne;
+
+
+rule "sample rule"
+when
+
+    $sampleTwo: SampleTwo()
+    
+    accumulate(
+         $sample: SampleOne();
+    $count: count()
+    )
+then
+    System.out.println("wierd error: " + $count );
+end
